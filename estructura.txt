@@ -1,0 +1,17 @@
+SmartEduAcademy/
+│
+├── index.html
+├── cursos.html
+├── instructores.html
+├── inscripcion.html
+├── style.css
+├── script.js
+└── /imagenes
+     ├── logo.png
+     ├── banner.jpg
+     ├── curso1.jpg
+     ├── curso2.jpg
+     ├── curso3.jpg
+     ├── instructor1.jpg
+     ├── instructor2.jpg
+     └── instructor3.jpg
