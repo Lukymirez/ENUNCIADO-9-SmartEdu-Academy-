@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SmartEdu Academy - Aprende con Nosotros</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartEdu Academy</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <img src="img/logo.png" alt="SmartEdu Logo" class="logo" />
-      <ul class="menu">
-        <li><a href="index.html" class="activo">Inicio</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="instructores.html">Instructores</a></li>
-        <li><a href="inscripcion.html">Inscripción</a></li>
-      </ul>
-      <button id="modo-btn">🌙</button>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="SmartEdu Academy Logo">
+                <h1>SmartEdu Academy</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#instructores">Instructores</a></li>
+                <li><a href="#inscripcion">Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="banner fade-in">
-    <img src="img/banner.jpg" alt="Banner SmartEdu" />
-    <div class="banner-texto">
-      <h1>Aprende sin límites</h1>
-      <p>Conéctate a un futuro lleno de oportunidades con SmartEdu Academy.</p>
-      <a href="cursos.html" class="btn">Explorar Cursos</a>
-    </div>
-  </section>
+    <!-- Banner -->
+    <section id="inicio" class="banner">
+        <div class="banner-texto">
+            <h2>Aprende donde y cuando quieras</h2>
+            <p>Explora nuestros cursos virtuales diseñados para tu crecimiento profesional.</p>
+            <a href="#cursos" class="btn">Ver Cursos</a>
+        </div>
+    </section>
 
-  <section class="intro fade-in">
-    <h2>Educación para el Futuro</h2>
-    <p>Promovemos el aprendizaje continuo, práctico y accesible para jóvenes y profesionales de todo el mundo.</p>
-  </section>
+    <!-- Cursos -->
+    <section id="cursos" class="cursos">
+        <h2>Nuestros Cursos</h2>
+        <div class="cursos-grid">
+            <div class="curso-card">
+                <img src="img/curso1.jpg" alt="Curso 1">
+                <h3>Desarrollo Web Moderno</h3>
+                <p>Aprende HTML, CSS y diseño responsive desde cero.</p>
+                <a href="#inscripcion" class="btn-secundario">Inscribirme</a>
+            </div>
+            <div class="curso-card">
+                <img src="img/curso2.jpg" alt="Curso 2">
+                <h3>Marketing Digital</h3>
+                <p>Domina las estrategias para potenciar tu marca online.</p>
+                <a href="#inscripcion" class="btn-secundario">Inscribirme</a>
+            </div>
+            <div class="curso-card">
+                <img src="img/curso3.jpg" alt="Curso 3">
+                <h3>Diseño Gráfico Profesional</h3>
+                <p>Conviértete en un diseñador con estilo y propósito.</p>
+                <a href="#inscripcion" class="btn-secundario">Inscribirme</a>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 SmartEdu Academy | Educación Virtual de Calidad</p>
-  </footer>
+    <!-- Instructores -->
+    <section id="instructores" class="instructores">
+        <h2>Nuestros Instructores</h2>
+        <div class="instructores-grid">
+            <div class="instructor-card">
+                <img src="img/instructor1.jpg" alt="Instructor 1">
+                <h3>María López</h3>
+                <p>Especialista en Marketing Digital y redes sociales.</p>
+            </div>
+            <div class="instructor-card">
+                <img src="img/instructor2.jpg" alt="Instructor 2">
+                <h3>Juan Pérez</h3>
+                <p>Desarrollador Front-End y diseñador web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscripción -->
+    <section id="inscripcion" class="inscripcion">
+        <h2>Formulario de Inscripción</h2>
+        <form class="formulario">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" required>
+
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" required>
+
+            <label for="curso">Curso de Interés</label>
+            <select id="curso" required>
+                <option value="">Seleccione un curso</option>
+                <option>Desarrollo Web Moderno</option>
+                <option>Marketing Digital</option>
+                <option>Diseño Gráfico Profesional</option>
+            </select>
+
+            <button type="submit" class="btn">Enviar Inscripción</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SmartEdu Academy. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
